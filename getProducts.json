@@ -1,0 +1,32 @@
+[
+  {
+    "id_product": 123,
+    "product_name": "Куртка",
+    "price": 45
+  },
+  {
+    "id_product": 456,
+    "product_name": "Костюм",
+    "price": 77
+  },
+  {
+    "id_product": 400,
+    "product_name": "Бермуды",
+    "price": 18
+  },
+  {
+    "id_product": 300,
+    "product_name": "Футболка",
+    "price": 10
+  },
+  {
+    "id_product": 157,
+    "product_name": "Пиджак",
+    "price": 51
+  },
+  {
+    "id_product": 30,
+    "product_name": "Блузка",
+    "price": 25
+  }
+]

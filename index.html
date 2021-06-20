@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Главная</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <div id="app">
+
+    <header class="header">
+        <div class="container header__wrapper">
+            <div class="header__logo-wrapper">
+                <a href="index.html">
+                    <img class="header__logo" src="img/logo.svg" width="44" height="38" alt="логотип">
+                </a> 
+            </div>
+                <ul class="header__list">
+        <div class="cart">
+            <search-form></search-form>
+            <cart ref="cart"></cart>
+        </div>
+                </ul>
+                <!-- <input type="search" class="search"> 
+                <img src="img/lens.svg" alt="лупа" width="27" height="28">
+            </div> -->
+
+          <!-- <ul class="header__list">
+                <li>
+                    <button class="header__button mobile__hide">
+                        <img src="img/burger.svg" alt="логотип открывающего меню (бургер)" width="32" height="23">
+                    </button>
+                </li>
+                <li>
+                    <form action="">
+                        <button class="header__button-person">
+                            <img src="img/person.svg" alt="иконка аватара (человечка), персона" width="29" height="29">
+                        </button>
+                    </form>
+                </li>
+                <li>
+                    <form action="">
+                        <button class="header__button-cart">
+                            <img src="img/cart.svg" alt="корзина" width="32" height="29">
+                        </button>
+                    </form>
+                </li>
+            </ul> -->
+        </div>
+
+        <nav class="header__navigation">
+            <h2 class="nav__menu">Menu</h2>
+            <ul class="nav_person">
+                <li>
+                    <h3 class="nav_heading">Man</h3>
+                </li>
+            </ul>
+            <ul class="clothes_man">
+                <li><a href="#">Accessories</a></li>
+                <li><a href="#">Bags</a></li>
+                <li><a href="#">Denim</a></li>
+                <li><a href="#">T-Shirt</a></li>
+            </ul>
+
+            <ul class="nav_person">
+                <li>
+                    <h3 class="nav_heading">Woman</h3>
+                </li>
+            </ul>
+            <ul class="clothes_woman">
+                <li><a href="#">Accessories</a></li>
+                <li><a href="#">Jackets&Coats</a></li>
+                <li><a href="#">Polos</a></li>
+                <li><a href="#">T-Shirt</a></li>
+                <li><a href="#">Shirt</a></li>
+            </ul>
+
+            <ul class="nav_person">
+                <li>
+                    <h3 class="nav_heading">Kids</h3>
+                </li>
+            </ul>
+            <ul class="clothes_kids">
+                <li><a href="#">Accessories</a></li>
+                <li><a href="#">Jackets&Coats</a></li>
+                <li><a href="#">Polos</a></li>
+                <li><a href="#">T-Shirt</a></li>
+                <li><a href="#">Shirt</a></li>
+                <li><a href="#">Bags</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+
+        <section class="intro">
+            <img src="img/man_in_jacket.jpg" alt="мужчина в куртке" width="800" height="764" class="intro__img">
+            <div class="intro__heading-wrapper">
+                <div class="intro__heading-text">
+                    <h2 class="intro__heading">The Brand</h2>
+                    <h2 class="intro__heading-luxerious">Of Luxerious
+                        <h2 class="intro__heading-pink">Fashion</h2>
+                    </h2>
+                </div>
+            </div>
+        </section>
+
+        <section class="stock container">
+            <h2 class="visually-hidden">Stock</h2>
+            <ul class="stock__list">
+                <li class="stock__item stock__item--woman">
+                    <a href="#">
+                        <h3 class="stock__heading">30% OFF<span class="stock__text">For Woman</span></h3>
+                    </a>
+                </li>
+
+                <li class="stock__item stock__item--man">
+                    <a href="#">
+                        <h3 class="stock__heading">Hot Deal<span class="stock__text">For Men</span></h3>
+                    </a>
+                </li>
+
+                <li class="stock__item stock__item--kid">
+                    <a href="#">
+                        <h3 class="stock__heading">new arrivals<span class="stock__text">For kids</span></h3>
+                    </a>
+                </li>
+
+                <li class="stock__item stock__item--accessory">
+                    <a href="#">
+                        <h3 class="stock__heading">luxirous & trendy<span class="stock__text">Accessories</span></h3>
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+        <section class="fetured container">
+            <h2 class="fetured__heading">Fetured Items</h2>
+            <p class="fetured__text">Shop for items based on what we featured in this week</p>
+        </section>
+        
+        <products ref="products" class="container"></products>
+
+      <!--  <section class="goods container">
+            <ul class="goods__list">
+                <li class="goods__item">
+                    <img src="img/goods-man-in-jacket.jpg" alt="мужчина в куртке" max-width="360" height="420">
+                    <h3 class="goods__heading">Ellery X M'O Capsule</h3>
+                    <p class="goods__text">Known for her sculptural takes on traditional tailoring, Australian arbiter
+                        of
+                        cool Kym Ellery teams up with Moda Operandi</p>
+                    <p class="goods__price">$52.00</p>
+                </li>
+
+                <li class="goods__item">
+                    <img src="img/goods-woman-in-black-suit.jpg" alt="девушка в костюме" max-width="360" height="420">
+                    <h3 class="goods__heading">Ellery X M'O Capsule</h3>
+                    <p class="goods__text">Known for her sculptural takes on traditional tailoring, Australian arbiter
+                        of
+                        cool Kym Ellery teams up with Moda Operandi</p>
+                    <p class="goods__price">$52.00</p>
+                </li>
+
+                <li class="goods__item">
+                    <img src="img/goods-man-in-shorts.jpg" alt="парень в бермудах" max-width="360" height="420">
+                    <h3 class="goods__heading">Ellery X M'O Capsule</h3>
+                    <p class="goods__text">Known for her sculptural takes on traditional tailoring, Australian arbiter
+                        of
+                        cool Kym Ellery teams up with Moda Operandi</p>
+                    <p class="goods__price">$52.00</p>
+                </li>
+
+                <li class="goods__item">
+                    <img src="img/goods-man-in-polo.jpg" alt="мужчина в брюках и футболке" max-width="360" height="420">
+                    <h3 class="goods__heading">Ellery X M'O Capsule</h3>
+                    <p class="goods__text">Known for her sculptural takes on traditional tailoring, Australian arbiter
+                        of
+                        cool Kym Ellery teams up with Moda Operandi</p>
+                    <p class="goods__price">$52.00</p>
+                </li>
+
+                <li class="goods__item">
+                    <img src="img/goods-woman-in-suit.jpg" alt="девушка в светлом костюме" max-width="360" height="420">
+                    <h3 class="goods__heading">Ellery X M'O Capsule</h3>
+                    <p class="goods__text">Known for her sculptural takes on traditional tailoring, Australian arbiter
+                        of
+                        cool Kym Ellery teams up with Moda Operandi</p>
+                    <p class="goods__price">$52.00</p>
+                </li>
+
+                <li class="goods__item">
+                    <img src="img/goods-woman-in-bloose.jpg" alt="девушка в блузке" max-width="360" height="420">
+                    <h3 class="goods_heading">Ellery X M'O Capsule</h3>
+                    <p class="goods__text">Known for her sculptural takes on traditional tailoring, Australian arbiter
+                        of
+                        cool Kym Ellery teams up with Moda Operandi</p>
+                    <p class="goods__price">$52.00</p>
+                </li>
+            </ul>
+        </section> -->
+
+      <!--  <section class="browse container">
+            <button class="browse__button">
+                <a href="#" class="browse__button-link">
+                    <p class="browse__button-text">Browse All Product</p>
+                </a>
+            </button>
+        </section> -->
+
+    </main>
+
+    <footer class="footer">
+        <section class="service">
+            <ul class="service__list">
+                <li class="service__nomination">
+                    <div class="service__item">
+                        <img src="img/service-car.svg" alt="иконка машины" width="45" height="32">
+                        <a href="#" class="service__link">Free Delivery</a>
+                        <p class="service__text">Worldwide delivery on all. Authorit tively morph next-generation innov
+                            tion
+                            with extensive models.</p>
+                    </div>
+                </li>
+
+                <li class="service__nomination">
+                    <div class="service__item">
+                        <img src="img/service-sale.svg" alt="иконка скидки с %" width="40" height="40">
+                        <a href="#" class="service__link">Free Delivery</a>
+                        <p class="service__text">Worldwide delivery on all. Authorit tively morph next-generation innov
+                            tion
+                            with extensive models.</p>
+                        </div>
+                </li>
+                
+
+                <li class="service__nomination">
+                    <div class="service__item">
+                        <img src="img/service-crown.svg" alt="иконка короны" width="47" height="35">
+                        <a href="#" class="service__link">Quality assurence</a>
+                        <p class="service__text">Worldwide delivery on all. Authorit tively morph next-generation innov
+                            tion
+                            with extensive models.</p>
+                </li>
+            </ul>
+        </section>
+
+        <section class="subscribe">
+            <ul class="subscribe__list container">
+                <li class="subscribe__review">
+                    <div class="subscribe__item">
+                        <img src="img/sub-woman-face.png" alt="фотография с лицом улыбающейся девушки" width="145"
+                            height="150" class="subscribe__img">
+                        <p class="subscribe__text">Vestibulum quis porttitor dui! Quisque viverra nunc mi, a
+                            pulvinar
+                            purus condimentum</p>
+                    </div>
+                </li>
+
+                <li class="subscribe__email">
+                    <div class="subscribe__item">
+                        <h3 class="subscribe__heading">Subscribe</h3>
+                        <h3 class="subscribe__text-heading">For Our Newletter
+                            and Promotion</h3>
+                        <div class="subscribe__wrapper">
+                            <input type="email" placeholder="Enter Your Email" class="subscribe__input">
+                            <button class="subscribe__button">Subscribe</button>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <section class="cellar">
+
+            <ul class="cellar__list container">
+                <li class="cellar__therights">
+                    <p class="cellar__text">© 2021 Brand All Rights Reserved.</p>
+                </li>
+
+                <div class="cellar__wrapper">
+                    <li class="cellar__links">
+                        <a href="#" class="link_facebook">
+                            <button class="cellar__button">
+                                <img src="img/facebook.svg" alt="иконка Facebook">
+                            </button>
+                        </a>
+                    </li>
+
+                    <li class="cellar__links">
+                        <a href="#" class="link_instagram">
+                            <button class="cellar__button">
+                                <img src="img/instagram.svg" alt="иконка Instagram">
+                            </button>
+                        </a>
+                    </li>
+
+                    <li class="cellar__links">
+                        <a href="#" class="link_pinterest">
+                            <button class="cellar__button">
+                                <img src="img/pinterest.svg" alt="иконка Pinterest">
+                            </button>
+                        </a>
+                    </li>
+
+                    <li class="cellar__links">
+                        <a href="#" class="link_twitter">
+                            <button class="cellar__button">
+                                <img src="img/twitter.svg" alt="иконка Twitter">
+                            </button>
+                        </a>
+                    </li>
+                </div>
+            </ul>
+        </section>
+    </footer>
+</div>
+
+    <script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js" integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="js/CartComp.js"></script>
+    <script src="js/ProducComp.js"></script>
+    <script src="js/SearchComp.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
