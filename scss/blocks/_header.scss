@@ -1,0 +1,62 @@
+.header {
+    background-color: $black-color;
+
+
+    .header__wrapper {
+        min-height: 75px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .header__logo-wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .header__logo {
+        margin: 0 41px 0 0;
+    }
+
+    .header__list {
+        display: flex;
+        list-style-type: none
+    }
+
+    .header__navigation {
+        display: none;
+    }
+
+    .header__button {
+        background-color: transparent;
+        border: none;
+        margin: 0 0 0 32px;
+    }
+
+    .header__button-person {
+        background-color: transparent;
+        border: none;
+        margin: 0 0 0 32px;
+
+        @include mobile {
+            display: none;
+        }
+    }
+
+    .header__button-cart {
+        background-color: transparent;
+        border: none;
+        margin: 0 0 0 32px;
+
+        @include mobile {
+            display: none;
+        }
+    }
+
+}
+
+@media (max-width: $mobile-width) {
+    .mobile__hide {
+        display: none;
+    }
+}

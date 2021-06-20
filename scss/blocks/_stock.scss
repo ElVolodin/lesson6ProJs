@@ -1,0 +1,80 @@
+.stock__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 64px 0 0;
+    margin-bottom: 20px;
+    list-style-type: none;
+
+    @include mobile {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+}
+
+.stock__item {
+    width: 31.6%;
+    min-height: 260px;
+    text-align: center;
+    background: linear-gradient(rgba(33, 22, 22, 0.7));
+
+    @include tablet {
+        min-height: 168px;
+    }
+
+}
+
+.stock__item--woman {
+    background-image: url(../img/stock-woman.jpg);
+
+    @include mobile {
+        width: 100%;
+    }
+}
+
+.stock__item--accessory {
+    width: 100%;
+    background-image: url(../img/stock-accessory.jpg);
+}
+
+.stock__item--man {
+    background-image: url(../img/stock-man.jpg);
+
+    @include mobile {
+        width: 100%;
+    }
+}
+
+.stock__item--kid {
+    background-image: url(../img/stock-child.jpg);
+
+    @include mobile {
+        width: 100%;
+    }
+}
+
+.stock__item--woman,
+.stock__item--man,
+.stock__item--kid {
+    margin: 0 0 10px;
+}
+
+.stock__heading {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: $white-color;
+    margin-top: 105px;
+}
+
+.stock__text {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 29px;
+    display: block;
+    color: $pink-dark-color;
+}

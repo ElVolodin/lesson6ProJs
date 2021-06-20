@@ -1,0 +1,30 @@
+@mixin font ($font-size, $line-height, $font-weight: 400, $font-style: normal) {
+    font-size: $font-size;
+    line-height: $line-height;
+    font-weight: $font-weight;
+    line-height: $line-height;
+}
+
+@mixin flex-center-space-between {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@mixin flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin tablet {
+    @media (max-width: 1599px) {
+        @content;
+    }
+}
+
+@mixin mobile {
+    @media (max-width: 376px) {
+        @content;
+    }
+}

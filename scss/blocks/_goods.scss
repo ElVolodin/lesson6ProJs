@@ -1,0 +1,47 @@
+.goods__list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    justify-content: space-between;
+    padding: 48px 0 0;
+    list-style-type: none;
+    align-items: center;
+
+    @include tablet {
+        padding: 0 0 0 0;
+
+    }
+
+}
+
+.goods__item {
+    max-width: 360px;
+    min-height: 581px;
+
+    @include tablet {}
+
+    @include mobile {
+        width: 100%;
+    }
+}
+
+.goods__price {
+    color: $pink-dark-color;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 19px;
+}
+
+.goods__item-product {
+    max-width: 360px;
+    min-height: 581px;
+
+    @include tablet {
+        display: none;
+    }
+
+    @include mobile {
+        display: none;
+    }
+}
